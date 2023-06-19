@@ -1,0 +1,199 @@
+@media screen and (max-width: 1240px){
+    .main{
+        &__content{
+            .container{
+                flex-direction: column;
+                justify-content: center;
+                align-items:center;
+            }
+        }
+        &__info{
+            max-width: 800px;
+            order: 2;
+            &-small{
+               margin-bottom: 20px;
+            }
+        }
+        &__title{
+            font-size: 90px;
+            line-height: 100%;
+            margin: 50px 0;
+        }
+        &__description{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .hidemax{
+            display: flex;
+            max-width: 800px;
+            margin: -100px auto;
+        }
+        .hidemin{
+            display: none;
+        }
+    }
+
+    .why{
+        &__list{
+            gap: 100px;
+            grid-template-columns: repeat(2, minmax(280px,312px));
+        }
+    }
+
+    .products{
+        &__list{
+            gap: 20px;
+            grid-template: repeat(2, minmax(564px, auto)) / repeat(2, 384px);
+        }
+    }
+}
+
+@media screen and (max-width: 992px){
+    .header{
+        .nav{
+            max-width: 500px;
+            width: 100%;
+        }
+    }
+    .order{
+        &__img{
+            max-width: 800px;
+            top: 100px;
+            right: calc(100% - 548px);
+        }
+        &__form{
+            max-width: 380px;
+            &-description {
+                font-size: 20px;
+            }
+        }
+        &__forms{
+            &-input{
+                width: 294px;
+                input{
+                    width: 292px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .title{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .main{
+        &__info{
+            max-width: 600px;
+        }
+        &__title{
+            font-size: 100px;
+            line-height: 100%;
+            margin: 50px 0;
+            text-align: center;
+        }
+        &__description{
+            font-size: 21px;
+            margin-bottom: 50px;
+        }
+        .hidemax{
+            max-width: 600px;
+            margin: -90px auto;
+        }
+        &__btn{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .why{
+        &__list{
+            gap: 60px;
+            grid-template-columns:  minmax(280px,312px);
+        }
+    }
+    .products{
+        &__list{
+            gap: 25px;
+            grid-template: repeat(1, minmax(564px, auto)) / repeat(1, 384px);
+        }
+    }
+    .header{
+        .container{
+            align-items: flex-start;
+            position: relative;
+            transition: 1s all;
+        }
+        .menu-list{
+            display: none;
+        }
+        .currently{
+            position: fixed;
+        }
+        .menu-item{
+            margin: 10px 0;
+        }
+        .navbar{
+            &__wrapper_icon{
+                min-width: 60px !important;
+                height: 60px;
+                display: flex;
+                padding: 10px;
+                border: 1px solid #fff;
+                border-radius: 5px;
+                cursor: pointer;
+                justify-content: center;
+                transition: 1s all;
+            }
+            &__open{
+                width: 30px;
+            }
+            &__close{
+                display: none;
+                width: 20px;
+            }
+
+        }
+        
+    }
+    .order{
+        padding-bottom: 100px;
+    }
+}
+@media screen and (max-width: 615px){
+    .title{
+        font-size: 43px;
+        line-height: 50px;
+    }
+    .main{
+        
+        &__info{
+            max-width: 400px;
+        }
+        .hidemax{
+            max-width: 350px;
+            margin: -50px auto -20px;
+        }
+        &__title{
+            font-size: 70px;
+            line-height: 100%;
+            margin: 30px 0;
+        }
+        &__description{
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 24px;
+        }
+    }
+
+    .products{
+        &__list{
+            gap: 10px;
+            grid-auto-rows: 584px;
+            grid-template: repeat(1, minmax(584px, auto)) / repeat(1, 350px);
+        }
+       
+        
+    }
+}

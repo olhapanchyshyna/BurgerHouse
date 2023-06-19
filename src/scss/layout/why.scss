@@ -1,0 +1,32 @@
+.why{
+    background: url("../images/why/whybg.png") no-repeat;
+    background-size: initial;
+    padding: 40px 0 180px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-size: cover;
+    &__list{
+        display: grid;
+        gap: 100px;
+        grid-template-columns: repeat(3, minmax(280px,312px));
+        justify-content: center;
+    }
+    &__item{
+        text-align: center;
+        &-img{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 24px;
+        }
+        &-title{
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 24px;
+        }
+        &-description{
+            font-size: 16px;
+            line-height: 140%;
+        }
+    }
+    
+}

@@ -1,0 +1,43 @@
+.main{
+    // height: 100vh;
+    &__content{
+        padding: 50px 0 50px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        transition: 1s all;
+    }
+    &__info{
+        max-width: 608px;
+        &-small{
+            width: 137px;
+            height: 46px;
+            padding: 12px 16px;
+            background: #D3320F;
+            border-radius: 100px;
+        }
+    }
+    &__title{
+        font-size: 120px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-family: 'Merriweather', sans-serif;
+        margin-bottom: 56px;
+    }
+    .hidemax{
+        display: none;
+    }
+    &__description{
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 50px;
+    }
+    &__photo{
+        z-index: 0;
+        margin-top: -120px;
+        margin-left: -160px;
+    }
+}

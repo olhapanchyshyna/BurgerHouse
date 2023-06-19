@@ -1,0 +1,82 @@
+.products{
+    background: url("../images/products/burgers_bg.png") no-repeat;
+    background-size: contain;
+    padding-bottom: 180px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-size: contain;
+    &__list{
+        justify-content: center;
+        display: grid;
+        grid-template: repeat(2, minmax(564px, auto)) / repeat(3, 384px);
+        grid-auto-rows: 564px;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+    &__item{
+        padding: 30px;
+        background: #211A16;
+        border: 1px solid #353535;
+        border-radius: 16px;
+        &-img{
+            margin-bottom: 24px;
+            height: 250px;
+            img{
+                width: 100%;
+            }
+        }
+        &-title{
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        &-description{
+            font-size: 16px;
+            line-height: 140%;
+            margin-bottom: 24px;
+            
+        }
+        &-footer{
+            display: flex;
+            justify-content: space-between;
+        }
+        &-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &-price{
+            font-size: 32px;
+            line-height: 39px;
+        }
+        &-weight{
+            font-size: 16px;
+            line-height: 18px;
+            color: #757575;
+        }
+        &-btn{
+            max-width: 182px !important;
+            padding: 20px 35px !important;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+        
+        }
+    }
+    .hideBtn{
+        max-width: 260px;
+        background: #D3320F;
+        border-radius: 20px;
+        padding: 19px 50px;
+        font-size: 18px;
+        line-height: 22px;
+        cursor: pointer;
+        border: 0;
+        transition: 1s all;
+        text-align: center;
+        margin: 30px auto 0;
+    }
+}
+
