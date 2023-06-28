@@ -8,13 +8,13 @@ function changePrice(){
             if(check == '$'){
                 btn.textContent = `$`;
                 const priceNum = item.textContent.slice(0, -1);
-                const price =  priceNum * 40;
-                item.textContent = `${price} грн`;
+                const price =  priceNum * 1.5;
+                item.textContent = `${price} €`;
             }
-            if(check == 'н'){
-                btn.textContent = `UAH`;
-                const priceNum = item.textContent.slice(0, -3);
-                const price =  priceNum / 40;
+            if(check == '€'){
+                btn.textContent = `€`;
+                const priceNum = item.textContent.slice(0, -1);
+                const price =  priceNum / 1.5;
                 item.textContent = `${price} $`
             }
            
