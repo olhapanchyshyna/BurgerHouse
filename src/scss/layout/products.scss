@@ -18,6 +18,9 @@
         background: #211A16;
         border: 1px solid #353535;
         border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         &-img{
             margin-bottom: 24px;
             height: 250px;

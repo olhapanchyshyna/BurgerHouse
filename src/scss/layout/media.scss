@@ -79,7 +79,7 @@
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 810px){
     .title{
         font-size: 50px;
         line-height: 60px;
@@ -116,7 +116,8 @@
     .products{
         &__list{
             gap: 25px;
-            grid-template: repeat(1, minmax(564px, auto)) / repeat(1, 384px);
+            grid-template: repeat(1, minmax(590px, auto)) / repeat(1, 384px);
+            grid-auto-rows: 590px;
         }
     }
     .header{

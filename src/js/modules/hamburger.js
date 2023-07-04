@@ -6,7 +6,7 @@ function hamburger(openSelector,closeSelector,menuSelector){
     showMenu();
 
     function showMenu(){
-        if (window.innerWidth <= 800){
+        if (window.innerWidth <= 810){
             const   openBtn = document.querySelector(openSelector),
                     closeBtn = document.querySelector(closeSelector),
                     menu = document.querySelector(menuSelector),
@@ -79,7 +79,7 @@ function hamburger(openSelector,closeSelector,menuSelector){
                 })
             })
         }
-        if (window.innerWidth >= 800){
+        if (window.innerWidth >= 810){
             const   openBtn = document.querySelector(openSelector),
                 closeBtn = document.querySelector(closeSelector),
                 menu = document.querySelector(menuSelector);
